@@ -47,3 +47,9 @@ select {
     border-radius: 7px;
     color: white;
 }
+
+@media  all and (max-width: 758px) {
+    .info-first {
+        flex-wrap: wrap;
+    }
+}
