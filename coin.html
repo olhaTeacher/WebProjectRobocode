@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/MainStyle.css">
+    <link rel="stylesheet" href="./styles/CoinStyle.css">
+    <script defer src="./scripts/CoinScripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo" class="logo">
+                </a>
+                <div class="menu">
+                    <a href="index.html">Головна сторінка</a>
+                    <a href="coins.html">Валюти</a>
+                    <a href="game.html">Гра</a>
+                </div>
+            </nav>
+        </div>
+        <div class="wrapper">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="banner banner-coin">
+            <div class="text-wrapper text">ROBOCODE</div>
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <div class="coin-info"></div>
+        </section>
+        <section class="container ">
+            <div class="data-container">
+                <label for="date-input">Виберiть дату</label>
+                <input id="date-input" type="text" value="7">
+                <select name="format-selector" id="selector"> <!--Передаємо інформацію через selector та value.-->
+                    <option value="1">Hours</option>
+                    <option value="24" selected>Days</option>
+                    <option value="168">Weeks</option>
+                    <option value="720">Month</option>
+                </select>
+                <input id="date-btn" type="button" value="Задати">
+            </div>
+            <div id="container"><canvas id="bitcoinChart0"></canvas></div>
+        </section>
+    </main>
+    <footer>
+        <div class="container footer">
+            <h3>Created by Wardens of potuzhnist</h3>
+        </div>
+    </footer>
+</body>
+
+</html>

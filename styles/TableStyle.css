@@ -1,0 +1,63 @@
+.table {
+    width: 100%;
+    background: #1B1B20; 
+    backdrop-filter: blur(10px); 
+    border-radius: 10px; 
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.table {
+    border: 3px solid transparent;
+    border-image: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet) 1;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+/* Налаштування розміру таблиці з валютами */
+.coin-container td:nth-child(1) { width: 10%; } 
+.coin-container td:nth-child(2) { width: 40%; } 
+.coin-container td:nth-child(3) { width: 20%; }
+.coin-container td:nth-child(4) { width: 20%; }
+.coin-container td:nth-child(5) { width: 20%; }
+
+.coin-container td:nth-child(2) a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
+}
+/* Налаштування розміру таблиці з кнопками */
+.btn-container td:nth-child(1) { width: 30%; } 
+.btn-container td:nth-child(2) { width: 20%; } 
+.btn-container td:nth-child(3) { width: 14%; }
+.btn-container td:nth-child(4) { width: 20%; }
+.btn-container td:nth-child(5) { width: 20%; }
+
+.btn-container td:nth-child(1) input {
+    width: 90%;
+    padding: 4px;
+    font-size: 14px;
+    background: #606060;
+    border: none;
+    border-radius: 7px;
+    color: #1B1B20;
+}
+
+.btn-container td:nth-child(1) input::placeholder {
+    color: black;
+    padding: 5px;
+}
+
+.btn-container button {
+    padding: 4px;
+    font-size: 14px;
+    background: #606060;
+    border: none;
+    border-radius: 7px;
+    color: #1B1B20;
+}
+.btn-container .positive {
+    background: rgb(81, 207, 117);
+}
+.btn-container .negative{
+    background: rgb(219, 99, 99);
+}

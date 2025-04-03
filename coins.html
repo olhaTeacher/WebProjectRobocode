@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Валюти</title>
+    <link rel="stylesheet" href="./styles/MainStyle.css">
+    <link rel="stylesheet" href="./styles/TableStyle.css">
+    <script src="./scripts/CoinsScript.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo" class="logo">
+                </a>
+                <div class="menu">
+                    <a href="index.html">Головна сторінка</a>
+                    <a href="coins.html">Валюти</a>
+                    <a href="game.html">Гра</a>
+                </div>
+            </nav>
+            <div class="wrapper">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="banner banner-coin">
+                <div class="text-wrapper">Валюти</div>
+            </div>
+        </div>
+    </header>
+    <div class="container table-container">
+        <table class="btn-container table"> <!--Таблиця під кнопки сортування-->
+            <tr>
+                <td><input type="text" class="search-field" placeholder="Search"></td>
+                <td><button id="name-button" class="neutral">NAME ▲▼</button></td>
+                <td><button id="price-button" class="neutral">PRICE ▲▼</button></td>
+                <td><button id="percentange-button" class="neutral">PERCENTANGE CHANGE ▲▼</button></td>
+                <td><button id="quantity-button" class="neutral">QUANTITY CHANGE ▲▼</button></td>
+            </tr>
+        </table>
+        <table class="coin-container table"> <!--контейнер під монети-->
+        </table>
+    </div>
+    <footer>
+        <div class="container footer">
+            <h3>Created by Wardens of potuzhnist</h3>
+        </div>
+    </footer>
+</body>
+
+</html>

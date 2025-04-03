@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/MainStyle.css">
+    <link rel="stylesheet" href="./styles/GameStyle.css">
+    <script src="./scripts/GameScripts.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo" class="logo">
+                </a>
+                <div class="menu">
+                    <a href="index.html">Головна сторінка</a>
+                    <a href="coins.html">Валюти</a>
+                    <a href="game.html">Гра</a>
+                </div>
+            </nav>
+            <div class="wrapper">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="banner">
+                <div class="text-wrapper">Robo Cambat</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container game-container">
+            <div class="defaultShop"> <!--
+                    У кожній кнопці в магазині є 3 змінні:
+                        - Тип предмета (type) - дає коду зрозуміти з якого магазину було зроблено покупку. 
+                        - Кількість додавання(add) - скільки додавати до змінної adder при покупці
+                        - Ціна предмета(price) - скільки віднімати від змінної counter при купівлі предмета
+                -->
+                <div class="shop_item">
+                    <img src="img/office-keyboard.png" data-type="def" data-add="1" data-price="50" class="item1 item">
+                    <h3>+ 1 click</h3>
+                    <p>cost 50$</p>
+                </div>
+                <div class="shop_item">
+                    <img src="img/office-mouse.png" data-type="def" data-add="5" data-price="250" class="item2 item">
+                    <h3>+ 5 click</h3>
+                    <p>cost 250$</p>
+                </div>
+                <div class="shop_item">
+                    <img src="img/game-keyboard.png" data-type="def" data-add="25" data-price="1000" class="item3 item">
+                    <h3>+ 25 click</h3>
+                    <p>cost 1000$</p>
+                </div>
+                <div class="shop_item">
+                    <img src="img/game-mouse.png" data-type="def" data-add="100" data-price="5000" class="item4 item">
+                    <h3>+ 100 click</h3>
+                    <p>cost 5000$</p>
+                </div>
+
+            </div>
+
+
+            <div class="mainGame">
+                <div class="catdiv"><img src="img/clicker.png" alt=""></div>
+                <p class="paragraph"></p>
+                <p class="click_show"></p>
+                <p class="period_show"></p>
+            </div>
+            <div class="periodShop"><!--
+                    У кожній кнопці в магазині є 3 змінні:
+                        - Тип предмета (type) - дає коду зрозуміти з якого магазину було зроблено покупку. 
+                        - Кількість додавання(add) - скільки додавати до змінної adder при покупці
+                        - Ціна предмета(price) - скільки віднімати від змінної counter при купівлі предмета
+                -->
+                <div class="shop_item">
+                    <img src="img/potato-server.png" data-type="period" data-add="1" data-price="75" class="item1 item">
+                    <h3>+ 1$/s</h3>
+                    <p>cost 75$</p>
+                </div>
+                <div class="shop_item">
+                    <img src="img/old-computer.jpg" data-type="period" data-add="5" data-price="400" class="item2 item">
+                    <h3>+ 5$/s</h3>
+                    <p>cost 400$</p>
+                </div>
+                <div class="shop_item">
+                    <img src="img/default-computer.jpg" data-type="period" data-add="25" data-price="1500"
+                        class="item3 item">
+                    <h3>+ 25$/s</h3>
+                    <p>cost 1500$</p>
+                </div>
+                <div class="shop_item">
+                    <img src="img/gaming-pc.jpg" data-type="period" data-add="100" data-price="7500" class="item4 item">
+                    <h3>+ 100$/s</h3>
+                    <p>cost 15000$</p>
+                </div>
+                <div class="shop_item">
+                    <img src="img/quant-computer.jpg" data-type="period" data-add="500" data-price="100000"
+                        class="item5 item">
+                    <h3>+ 500$/s</h3>
+                    <p>cost 100000$</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container footer">
+            <h3>Created by Wardens of potuzhnist</h3>
+        </div>
+    </footer>
+</body>
+
+</html>

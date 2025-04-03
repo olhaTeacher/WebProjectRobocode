@@ -1,0 +1,115 @@
+main {
+    background: url(../img/game.jpg);
+    background-size: cover;
+    padding: 20px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(3px);
+}
+
+.defaultShop,
+.periodShop {
+    width: 200px;
+    border-radius: 10px;
+    background: #1B1B20;
+    padding: 19px;
+    text-align: center;
+}
+
+.defaultShop,
+.periodShop h3 {
+    color: blue;
+}
+
+.shop_item {
+
+    background: rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    margin-bottom: 4px;
+    padding: 5px;
+
+}
+
+.item {
+    width: 100px;
+}
+
+.mainGame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+/* Медіа-запити */
+@media (max-width: 1024px) {
+    .game-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .defaultShop,
+    .periodShop {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .mainGame {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu a {
+        margin: 5px 0;
+    }
+
+    .game-container {
+        flex-direction: column;
+    }
+
+    .shop_item img {
+        width: 80px;
+    }
+
+    .paragraph {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 80px;
+    }
+
+    .shop_item img {
+        width: 60px;
+    }
+
+    .paragraph {
+        font-size: 20px;
+    }
+
+    .defaultShop,
+    .periodShop {
+        padding: 10px;
+    }
+}

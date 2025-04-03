@@ -1,0 +1,663 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: white;
+  overflow-x: hidden;
+
+}
+/* Стилі на обмеження розміру */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+/* Стилі меню */
+nav {
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px inset #1B1B20;
+}
+
+nav .logo {
+  width: 100px;
+}
+
+nav .menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+nav .menu a:hover {
+  color: #fabb04;
+}
+/* Стилі головного банера */
+.banner {
+  height: 80vh;
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-main {
+  height: 80vh;
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: black;
+
+}
+
+.gray {
+  background: #1B1B20;
+}
+
+/* Стилі тексту анімованого градієнтом */
+.text-wrapper {
+  width: 100%;
+  font-weight: bold;
+  background: linear-gradient(to right, #1cd191, #fa9804 50%, #1cd191);
+  background-size: 200% 100%;
+  color: rgba(255, 255, 255, 0.1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: animate 5s infinite;
+  font-size: 105px;
+  text-align: center;
+  font-family: bignoodletitling;
+}
+
+.banner-desc {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10% 0;
+
+}
+/* Стилі блоку із картинкою */
+.banner-img {
+  height: 100%;
+  flex: 1;
+  background: url(../img/img1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 484px 395px;
+  position: relative;
+}
+/* Стилі анімованої картинки */
+.banner-img-roud {
+  height: 100%;
+  width: 100%;
+  flex: 1;
+  background: url(../img/shape1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 515px 515px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: rotate-around 15s linear infinite;
+}
+
+.banner-button {
+  margin-top: 20px;
+  background: #fabb04;
+  width: 200px;
+  height: 60px;
+  padding: 17px;
+  font-size: 20px;
+  border-radius: 15px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.25s;
+  position: relative;
+  overflow: visible;
+  clip-path: inset(0 0 0 0 round 15px);
+}
+
+.banner-button a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.banner-button:active {
+  background: #ab7f00;
+}
+
+.banner-coin {
+  height: 50vh;
+}
+
+.banner-header {
+  font-size: 40px;
+}
+
+.banner-text {
+  color: grey;
+  margin-top: 40px;
+  font-size: 18px;
+}
+/* Стилі блоків із описом */
+.desc {
+  background-color: #151515;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc h2 {
+  text-align: center;
+  font-size: 40px;
+  margin: 15px 0;
+}
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advantage {
+  background-color: #1B1B20;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex: 1;
+  margin-left: 30px;
+  border-radius: 10%;
+}
+
+.desc h3 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.desc p {
+  color: grey;
+  font-size: 18px;
+}
+
+.advantage img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+
+.advantage:hover {
+  background-color: #fabb04;
+  color: black;
+  transition: 0.7s;
+
+}
+
+.advantage:hover p {
+  color: black;
+}
+
+.advantage:hover img {
+  background: black;
+}
+
+.desc2 h2 {
+  text-align: right;
+  font-size: 40px;
+  margin: 15px 0;
+}
+/* Стилі блоку відповідей на основні питання */
+.possibility {
+  height: 80vh;
+  display: flex;
+  padding: 30px 20px;
+}
+
+.possib_content {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10% 0;
+
+}
+
+.possib_img {
+  height: 100%;
+  flex: 1;
+  background: url(../img/faq.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 484px 395px;
+}
+
+.possib_content h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.possib_content p {
+  color: gray;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.slide {
+  margin-bottom: 20px;
+}
+
+.slide_head {
+  border: 1px solid #1B1B20;
+  border-radius: 7px;
+  padding: 7px;
+  background: #1B1B20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slide_head button {
+  padding: 10px;
+  width: 50px;
+  font-size: 20px;
+  background: #606060;
+  border: none;
+  border-radius: 7px;
+  color: #1B1B20;
+}
+
+.slide_text {
+  height: 0;
+  margin-top: -5px;
+  padding: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+}
+
+.slide_text p {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.active {
+  border: 1px solid #1B1B20;
+  max-height: 200px;
+  height: auto;
+}
+
+.slide_text.active p {
+  opacity: 1;
+}
+
+.slide_head button:hover {
+  background: #fabb04;
+}
+
+footer {
+  border-top: 1px solid #1B1B20;
+}
+
+.footer {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+/* Стилі анімованого банера */
+.wrapper span {
+  position: absolute;
+  top: -120px;
+  height: 50px;
+  width: 50px;
+  z-index: -1;
+  animation: animate-banner 10s linear infinite;
+}
+
+.wrapper span:nth-child(1) {
+  left: 60px;
+  animation-delay: 0.6s;
+  border: 5px solid cyan;
+}
+
+.wrapper span:nth-child(2) {
+  left: 60%;
+  animation-delay: 3s;
+  width: 60px;
+  height: 60px;
+  border: 5px solid #ff4293;
+}
+
+.wrapper span:nth-child(3) {
+  left: 20%;
+  animation-delay: 2s;
+  border: 5px solid #fff;
+}
+
+.wrapper span:nth-child(4) {
+  left: 30%;
+  animation-delay: 5s;
+  width: 80px;
+  height: 80px;
+  border: 5px solid #befb46;
+}
+
+.wrapper span:nth-child(5) {
+  left: 40%;
+  animation-delay: 1s;
+  border: 5px solid #ff4293;
+}
+
+.wrapper span:nth-child(6) {
+  left: 50%;
+  animation-delay: 7s;
+  border: 5px solid deepskyblue;
+}
+
+.wrapper span:nth-child(7) {
+  left: 60%;
+  animation-delay: 6s;
+  width: 100px;
+  height: 100px;
+  border: 5px solid #ffd59e;
+}
+
+.wrapper span:nth-child(8) {
+  left: 70%;
+  animation-delay: 8s;
+  border: 5px solid #befb46;
+}
+
+.wrapper span:nth-child(9) {
+  left: 10%;
+  animation-delay: 6s;
+  width: 90px;
+  height: 90px;
+  border: 5px solid cyan;
+}
+
+.wrapper span:nth-child(10) {
+  left: 90%;
+  animation-delay: 4s;
+  border: 5px solid #fff;
+}
+
+.content h2 b {
+  -webkit-text-fill-color: transparent;
+  font-size: 65px;
+}
+
+/* Анімація тексту */
+@keyframes animate-banner {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: translateY(800px) rotate(360deg);
+    opacity: 0;
+  }
+}
+/* Анімація обертаючого елемента */
+@keyframes rotate-around {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Анімація баннеру */
+@keyframes animate {
+
+  0%,
+  10% {
+    background-position: -100% 0;
+  }
+
+  20% {
+    background-position: left top;
+  }
+
+  90% {
+    background-position: right top;
+  }
+
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+/* Медіа-запити */
+@media all and (max-width: 1000px) {
+  .container {
+    min-width: 900px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  }
+
+  .banner {
+    height: 60vh;
+    padding-top: 30px;
+
+  }
+
+  .banner-main {
+    padding: 5px 10px;
+  }
+
+  .banner-img {
+    background-size: 384px 295px;
+  }
+
+  .banner-img-roud {
+    background-size: 400px 400px;
+  }
+
+  .text-wrapper {
+    font-size: 80px;
+    top: 45%;
+  }
+
+  .menu {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .desc {
+    width: 100vw;
+    padding: 5px 20px;
+  }
+
+  .advantages {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantage {
+    margin-left: 15px;
+    margin-top: 15px;
+    flex: 1 1 35%;
+  }
+
+  .possibility {
+    padding: 5px;
+  }
+}
+
+@media all and (max-width: 758px) {
+  .container {
+    min-width: 600px;
+  }
+
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 50vh;
+    padding-top: 20px;
+  }
+
+  .text-wrapper {
+    font-size: 70px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+  }
+
+  .menu a {
+    gap: 10px;
+  }
+
+  .text-wrapper {
+    font-size: 50px;
+    top: 40%;
+  }
+
+  .banner-main {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .banner-desc {
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner-img {
+    height: 300px;
+    background-size: contain;
+  }
+
+  .possibility {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .possib_content,
+  .possib_img {
+    flex: 1;
+    text-align: center;
+  }
+
+  .possib_img {
+    height: 250px;
+    background-size: contain;
+  }
+
+  .advantages {
+    flex-direction: column;
+  }
+
+  .desc {
+    width: 100%;
+    padding: 5px 10px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .container {
+    min-width: 450px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .menu a {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+
+  .text-wrapper {
+    font-size: 50px;
+  }
+
+  .banner-header {
+    padding-top: 25px;
+    font-size: 30px;
+  }
+
+  .banner-text {
+    font-size: 16px;
+    padding: 10px 5px;
+  }
+
+  .banner-button {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .advantage {
+    flex: 1 1 100%;
+    margin-left: 0;
+  }
+
+  .desc {
+    width: 100%;
+    padding: 5px 5px;
+  }
+
+  .desc h2,
+  .desc h3 {
+    font-size: 30px;
+  }
+
+  .desc p {
+    font-size: 16px;
+  }
+}
